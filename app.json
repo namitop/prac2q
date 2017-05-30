@@ -2,7 +2,7 @@
   "name": "prac2q",
   "description": "This file for heroku review app",
   "scripts": {
-    "postdeploy": "bin/heroku_setup",
+    "postdeploy": "bundle exec rake db:migrate",
     "pr-predestroy": "bin/heroku_teardown"
   },
   "env": {
